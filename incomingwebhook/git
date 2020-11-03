@@ -1,0 +1,1 @@
+curl -H "Content-Type: application/json" -d "{\"text\": \"Hello bosss\"}" https://outlook.office.com/webhook/c856050d-1eee-4e51-bff3-0eedd5fcf375@a8f1b450-3c75-4fd2-83d1-5e5c7c24f767/IncomingWebhook/0823aabdfe75428fbf5a332a0fd250ec/c0225f91-a161-47aa-9720-5ab9ee706d8f

@@ -1,0 +1,68 @@
+<!-- <table>
+    <tr>
+        <td>Name</td>
+        <td>{{name}}</td>
+    </tr>
+    <tr>
+        <td>Designation</td>
+        <td>{{designation}}</td>
+    </tr>
+    <tr *ngIf='showDetails'>
+        <td>Age</td>
+        <td>{{age}}</td>
+    </tr>
+    <tr *ngIf='showDetails'>
+        <td>Gender</td>
+        <td>{{gender}}</td>
+    </tr>
+</table>
+<br />
+
+<div>
+    <button (click)='toggle()'>{{showDetails? 'hide': 'show'}} Details</button>
+</div> -->
+
+ <table *ngIf='employee'>
+    <thead>
+     <tr>
+        <th colspan="2">
+            Employee Details
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Empcode</td>
+            <td>{{employee.empcode | uppercase}}</td>
+        </tr>
+        <tr>
+            <td>Name</td>
+            <td>{{employee.empName}}</td>
+        </tr>
+        <tr>
+            <td>Gender</td>
+            <td>{{employee.gender}}</td>
+        </tr>
+        <tr>
+            <td>AnnualSalary</td>
+            <td>{{employee.annualsalary}}</td>
+        </tr>
+        <tr>
+            <td>DateofBirth</td>   
+            <td>{{employee.dateofbirth}}</td>
+        </tr>
+
+    </tbody>
+</table> 
+ <div *ngIf='!employee'>
+    {{statusMessage}}
+</div> 
+<div style="margin-top: 5px">
+<button class="btn btn-primary" (click)="onBackButtonclick()" >Back to Employee List</button>
+</div>
+<br/>
+<p>
+<button  (click)='showOverview()'>Overview</button>
+<button (click)='showcontact()'>contact</button>
+<router-outlet></router-outlet>
+</p>

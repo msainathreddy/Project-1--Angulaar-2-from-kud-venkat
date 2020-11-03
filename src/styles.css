@@ -1,1 +1,29 @@
 /* You can add global styles to this file, and also import other style files */
+table{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    color: #369;
+    border-collapse: collapse;
+
+}
+td{
+    border:1px solid black;
+}
+
+h1{
+    color: #369;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 250%;
+}
+.boldclass{
+    font-weight: bold
+}
+.italicclass{
+     font-style: italic;
+}
+.colorclass{
+    color: red;
+}
+nav a.active{
+    color: #039be5;
+}
